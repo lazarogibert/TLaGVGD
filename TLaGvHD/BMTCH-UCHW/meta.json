@@ -1,0 +1,33 @@
+{
+  "target": "acute_GvHD_II_III_IV",
+  "columns_used": [
+    "recipient_gender",
+    "disease",
+    "stem_cell_source",
+    "acute_GvHD_II_III_IV"
+  ],
+  "cat_cols": [
+    "recipient_gender",
+    "disease",
+    "stem_cell_source"
+  ],
+  "num_cols": [],
+  "test_size": 0.15,
+  "random_state": 16,
+  "best_epoch": 20,
+  "best_hyperparameters": {
+    "n_pre_layers": 0,
+    "pre_units": 32,
+    "l2": 0.0001,
+    "dropout_pre": 0.0,
+    "encoder_units": 8,
+    "dropout_enc": 0.2,
+    "lr": 0.001
+  },
+  "n_train": 158,
+  "n_val": 29,
+  "n_full": 187,
+  "input_dim_after_preprocessing": 8,
+  "model_path": "outputs_nn_base/base_model_full_data.keras",
+  "preprocessor_path": "outputs_nn_base/preprocessor.joblib"
+}
