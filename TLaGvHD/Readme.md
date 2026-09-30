@@ -49,19 +49,19 @@ The primary objective is predicting the occurrence of aGvHD grades II-IV within 
 * **Statistical Significance:** Dunnett's test was utilized to assess the significance of the improvements in AUROC against baseline models (p < 0.01).
 
 ## Code Information
-The repository is provided as interactive Jupyter Notebooks (`.ipynb`) and is structured into two distinct pipelines to ensure complete reproducibility of the bidirectional experiments. 
+The repository is provided as interactive Jupyter Notebooks (`.ipynb`) and is structured into three distinct pipelines to ensure complete reproducibility of the experiments. 
 
 **Pipeline 1: BMTCH (Source) -> UCHW (Target)**
 * `Base_model_BMTCH_UCHW.ipynb`: Ingests the BMTCH dataset, tunes hyperparameters, constructs the base network with an `encoder` layer, and exports the artifacts.
 * `Transfer_Learning_BMTCH_UCHW.ipynb`: Transfers learned representations from the BMTCH base model to the UCHW target dataset.
-* `Explainability_Transfer_Learning_BMTCH_UCHW.ipynb`: Evaluates the transferred model on the test set and executes the XAI pipeline to export high-resolution vector graphics (.pdf).
+* `Explainability_Transfer_Learning_BMTCH_UCHW.ipynb`: Evaluates the target model and generates XAI visualizations for this direction.
 
 **Pipeline 2: UCHW (Source) -> BMTCH (Target)**
 * `Base_model_UCHW_BMTCH.ipynb`: Ingests the UCHW dataset, tunes hyperparameters, constructs the base network with an `encoder` layer, and exports the artifacts.
 * `Transfer_Learning_UCHW_BMTCH.ipynb`: Transfers learned representations from the UCHW base model to the BMTCH target dataset.
 * `Explainability_Transfer_Learning_UCHW_BMTCH.ipynb`: Evaluates the target model and generates XAI visualizations for this direction.
 
-**Pipeline 2: UCHW (Source) -> BMTCH (Target)**
+**Pipeline 3: BMTCH (Source) -> CIBMTR (Target)**
 * `Base_model_BMTCH_CIBMTR.ipynb`: Ingests the BMTCH dataset, tunes hyperparameters, constructs the base network with an `encoder` layer, and exports the artifacts.
 * `Transfer_Learning_BMTCH_CIBMTR.ipynb`: Transfers learned representations from the BMTCH base model to the CIBMTR target dataset.
 * `Explainability_Transfer_Learning_BMTCH_CIBMTR.ipynb`: Evaluates the target model and generates XAI visualizations for this direction.
